@@ -10,15 +10,15 @@ public class Spawner : MonoBehaviour
 
     [SerializeField] private float firstSpawnDelay;
 
+
     [Serializable]
     public struct SpawnEnemyWave
     {
-        public int enemyIndex;
-        public int spawnIndex;
-        public float spawnDelay;
-
-        
+        [Range(0f, 5f)] public int enemyIndex;
+        [Range(0f, 4f)] public int spawnIndex;
+        [Range(0f, 10f)] public float spawnDelay;        
     }
+
     public SpawnEnemyWave[] wave;
 
     private IEnumerator SpawnEnemy()
@@ -30,15 +30,15 @@ public class Spawner : MonoBehaviour
             Instantiate(enemies[wave[i].enemyIndex], spawnTransform[wave[i].spawnIndex].position, enemies[wave[i].enemyIndex].transform.rotation);
    
             yield return new WaitForSeconds(wave[i].spawnDelay); 
-        }
-       
+        }     
     }
 
     private void Start()
     {
+
+       EnemyShip.enemyCount= wave.Length;
+  
        StartCoroutine(SpawnEnemy());
+
     }
-
- 
-
 }

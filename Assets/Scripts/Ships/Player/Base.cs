@@ -14,10 +14,15 @@ public class Base : MonoBehaviour
     [SerializeField] private float maxHealthAmmount;
     private float currentHealthAmmount;
 
+    private AudioSource blowUp;
+    [SerializeField] private GameObject[] baseGuns; 
+    
    private void Start()
     {
-        currentHealthAmmount = maxHealthAmmount;
+        blowUp= GetComponent<AudioSource>();
 
+
+        currentHealthAmmount = maxHealthAmmount;
         healthAmmount.text = currentHealthAmmount.ToString();
         healthSlider.maxValue = currentHealthAmmount;
         healthSlider.value = healthSlider.maxValue;
@@ -55,8 +60,16 @@ public class Base : MonoBehaviour
 
     private void Die()
     {
+        blowUp.Play();
+        GetComponent<BoxCollider>().enabled = false;
+
+        for (int i = 0; i < baseGuns.Length; i++)
+        {
+            baseGuns[i].SetActive(false);
+        }
+
+
         fadingPanel.CallFadeCoroutine();
-        Destroy(gameObject);
     }
 
 }

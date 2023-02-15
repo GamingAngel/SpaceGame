@@ -21,6 +21,8 @@ public class Ship : MonoBehaviour
 
     protected AudioSource shootSound;
 
+    [SerializeField] private GameObject blowUp;
+
     protected void OnTriggerStay(Collider other)
     {
         if (other.CompareTag(tagToShot) && (other.name != "Bullet(Clone)"))
@@ -35,7 +37,7 @@ public class Ship : MonoBehaviour
         {
             for (int i = 0; i < shootingPosition.Length; i++)
             {
-                shootSound.Play();
+                
 
                 GameObject shotBullet = Instantiate(bullet, shootingPosition[i].position, shootingPosition[i].rotation);
 
@@ -45,7 +47,7 @@ public class Ship : MonoBehaviour
                 bulletComponent.bulletDamage = shipDamage;
                 bulletComponent.tag = tagToShot;
             }
-
+            shootSound.Play();
             lastShotTime = Time.time;
         }
     }
@@ -74,6 +76,7 @@ public class Ship : MonoBehaviour
 
     protected virtual void Die()
     {
+        Instantiate(blowUp);
         Destroy(gameObject);
     }
 

@@ -105,7 +105,7 @@ MonoBehaviour:
   shipDamage: 20
   shipBulletSpeed: 5
   fireRate: 1
-  bullet: {fileID: 4552239235270568257, guid: 4ebb46a6c3d511446af1b18c26a2dabb, type: 3}
+  bullet: {fileID: 7116864416550128222, guid: 8a882f1c2053b2345ad50e41d22f5307, type: 3}
   shootingPosition:
   - {fileID: 8665637310184332487}
 --- !u!54 &-7897741515184544932

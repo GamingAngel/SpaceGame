@@ -10,11 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1953608550319625196}
   - component: {fileID: 5771763134437712255}
-  - component: {fileID: 8712993508097079254}
-  - component: {fileID: 4590546968717633973}
   - component: {fileID: 6757179600595060962}
   - component: {fileID: 2945729184569210174}
   - component: {fileID: 8757013928664305534}
+  - component: {fileID: 1806841302479907715}
   m_Layer: 0
   m_Name: FirstEnemyShip
   m_TagString: Enemy
@@ -60,34 +59,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!64 &8712993508097079254
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1177493444911155542}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2564422504719650400, guid: 5b6d67ea2b579674db9da6eb7ef6ad8a, type: 3}
---- !u!64 &4590546968717633973
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1177493444911155542}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7851943731773633538, guid: 5b6d67ea2b579674db9da6eb7ef6ad8a, type: 3}
 --- !u!114 &6757179600595060962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,13 +76,16 @@ MonoBehaviour:
   shipDamage: 5
   shipBulletSpeed: 2.5
   fireRate: 2
-  bullet: {fileID: 4552239235270568257, guid: 4ebb46a6c3d511446af1b18c26a2dabb, type: 3}
+  bullet: {fileID: 1388030656300791708, guid: 07e583c56c7d52c41a9b1770ed593f6a, type: 3}
   shootingPosition:
   - {fileID: 1085059088074126823}
   - {fileID: 2852676197412674642}
+  blowUp: {fileID: 2488773826827501985, guid: 6e97180ae1ca3fd4ebdc999d7d7d760d, type: 3}
   energyToDrop: 5
   speed: 1
   direction: {x: -1, y: 0, z: 0}
+  collider: {fileID: 1806841302479907715}
+  collider2: {fileID: 2945729184569210174}
 --- !u!65 &2945729184569210174
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -221,6 +195,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &1806841302479907715
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177493444911155542}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.9502077, y: 1, z: 3.4013283}
+  m_Center: {x: -0.07087845, y: 0, z: 0.060777612}
 --- !u!1 &2362233531595615702
 GameObject:
   m_ObjectHideFlags: 0

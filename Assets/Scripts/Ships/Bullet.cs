@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
     [HideInInspector]
     public float bulletSpeed;
 
-    private float bulletLifeTime=20f;
+    private float bulletLifeTime=10f;
 
     private void Start()
     {

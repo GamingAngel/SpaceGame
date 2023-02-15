@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class OnClickLoad : MonoBehaviour
 {
-    [SerializeField] private string levelName;
+    public string levelName;
     public void LoadLevel()
     {
         SceneManager.LoadScene(levelName);
