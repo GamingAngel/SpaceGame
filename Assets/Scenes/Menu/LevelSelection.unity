@@ -176,7 +176,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18cd0038ff2c0a4c97ab398e0cc0721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: Level12
+  levelIndex: 12
+  ad: {fileID: 137063972}
 --- !u!114 &29259973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -459,7 +460,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18cd0038ff2c0a4c97ab398e0cc0721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: Level5
+  levelIndex: 5
+  ad: {fileID: 137063972}
 --- !u!114 &69035194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,7 +609,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18cd0038ff2c0a4c97ab398e0cc0721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: Level1
+  levelIndex: 1
+  ad: {fileID: 137063972}
 --- !u!114 &93299116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -837,6 +840,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116755661}
   m_CullTransparentMesh: 1
+--- !u!1 &137063969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 137063971}
+  - component: {fileID: 137063970}
+  - component: {fileID: 137063972}
+  m_Layer: 0
+  m_Name: AdsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &137063970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137063969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97a936bde324db243a4b9d81ceb0e575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testMode: 1
+--- !u!4 &137063971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137063969}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.27674186, y: 3.0692024, z: 4.384691}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &137063972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137063969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5dba187f64bf934e869e0b20ff537fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  androidAdID: Interstitial_Android
+  iOSAdID: Interstitial_iOS
 --- !u!1 &148349549
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,7 +953,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18cd0038ff2c0a4c97ab398e0cc0721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: Level7
+  levelIndex: 7
+  ad: {fileID: 137063972}
 --- !u!114 &148349552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1713,7 +1777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18cd0038ff2c0a4c97ab398e0cc0721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: Level6
+  levelIndex: 6
+  ad: {fileID: 137063972}
 --- !u!114 &726168566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2368,7 +2433,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18cd0038ff2c0a4c97ab398e0cc0721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: Level2
+  levelIndex: 2
+  ad: {fileID: 137063972}
 --- !u!114 &944588102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2516,7 +2582,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18cd0038ff2c0a4c97ab398e0cc0721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: Level15
+  levelIndex: 15
+  ad: {fileID: 137063972}
 --- !u!114 &949397701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3204,7 +3271,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18cd0038ff2c0a4c97ab398e0cc0721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: Level4
+  levelIndex: 4
+  ad: {fileID: 137063972}
 --- !u!114 &1176185556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3352,7 +3420,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18cd0038ff2c0a4c97ab398e0cc0721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: Level13
+  levelIndex: 13
+  ad: {fileID: 137063972}
 --- !u!114 &1228767737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3500,7 +3569,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18cd0038ff2c0a4c97ab398e0cc0721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: Level9
+  levelIndex: 9
+  ad: {fileID: 137063972}
 --- !u!114 &1327860207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3648,7 +3718,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18cd0038ff2c0a4c97ab398e0cc0721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: Level10
+  levelIndex: 10
+  ad: {fileID: 137063972}
 --- !u!114 &1391688935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3796,7 +3867,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18cd0038ff2c0a4c97ab398e0cc0721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: Level11
+  levelIndex: 11
+  ad: {fileID: 137063972}
 --- !u!114 &1736636932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4079,7 +4151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18cd0038ff2c0a4c97ab398e0cc0721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: Level8
+  levelIndex: 8
+  ad: {fileID: 137063972}
 --- !u!114 &1831339810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4521,7 +4594,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18cd0038ff2c0a4c97ab398e0cc0721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: Level3
+  levelIndex: 3
+  ad: {fileID: 137063972}
 --- !u!114 &2073283931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4669,7 +4743,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18cd0038ff2c0a4c97ab398e0cc0721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: Level14
+  levelIndex: 14
+  ad: {fileID: 137063972}
 --- !u!114 &2079264589
 MonoBehaviour:
   m_ObjectHideFlags: 0

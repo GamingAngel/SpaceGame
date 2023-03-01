@@ -14,15 +14,15 @@ public class Fading : MonoBehaviour
     {
         Time.timeScale = 1f;
         fadeImage = GetComponent<Image>();
-        CallFadeCoroutine();
+        CallFadeCoroutine(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void CallFadeCoroutine()
+    public void CallFadeCoroutine(int levelIndex)
     {
-        StartCoroutine(Fade());
+        StartCoroutine(Fade(levelIndex));
     }
 
-    private IEnumerator Fade()
+    private IEnumerator Fade(int levelIndex)
     {
        
         if(fadeOut)
@@ -35,7 +35,7 @@ public class Fading : MonoBehaviour
             fadeImage.raycastTarget = true;
             fadeImage.CrossFadeAlpha(1f, fadingTime, true);
             yield return new WaitForSeconds(fadingTime + 2);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(levelIndex);
         }    
         
     }

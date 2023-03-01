@@ -61,15 +61,10 @@ public class Base : MonoBehaviour
     private void Die()
     {
         blowUp.Play();
-        GetComponent<BoxCollider>().enabled = false;
 
-        for (int i = 0; i < baseGuns.Length; i++)
-        {
-            baseGuns[i].SetActive(false);
-        }
+        fadingPanel.CallFadeCoroutine(SceneManager.GetActiveScene().buildIndex);
 
-
-        fadingPanel.CallFadeCoroutine();
+        Destroy(gameObject);
     }
 
 }

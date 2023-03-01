@@ -1,0 +1,63 @@
+{
+    "format": {
+        "version": "1.0"
+    },
+    "shaders": {
+        "Main shader": {
+            "parameters": {
+                "Common Parameters": {
+                    "ao_intensity": 0.75,
+                    "emissive_intensity": 15.59000015258789,
+                    "horizonFade": 1.2799999713897705,
+                    "nbSamples": 32
+                },
+                "Parallax Occlusion Mapping": {
+                    "maxPOMSamples": 21,
+                    "minPOMSamples": 14,
+                    "pomStrength": 2.7799999713897705,
+                    "usePOM": true
+                }
+            },
+            "shader": "pbr-metal-rough-with-alpha-blending",
+            "shaderInstance": "Main shader"
+        }
+    },
+    "texturesets": {
+        "back": {
+            "shader": "Main shader"
+        },
+        "cockpit": {
+            "shader": "Main shader"
+        },
+        "glass": {
+            "shader": "Main shader"
+        },
+        "hinge": {
+            "shader": "Main shader"
+        },
+        "laser": {
+            "shader": "Main shader"
+        },
+        "leftFan": {
+            "shader": "Main shader"
+        },
+        "leftPattern": {
+            "shader": "Main shader"
+        },
+        "leftWing": {
+            "shader": "Main shader"
+        },
+        "rightFan": {
+            "shader": "Main shader"
+        },
+        "rightPattern": {
+            "shader": "Main shader"
+        },
+        "rightWing": {
+            "shader": "Main shader"
+        },
+        "underGlass": {
+            "shader": "Main shader"
+        }
+    }
+}

@@ -9,7 +9,7 @@ public class OcClickRestart : MonoBehaviour
     public void Restart()
     {
       Time.timeScale = 1.0f;
-      fadingPanel.CallFadeCoroutine();
+      fadingPanel.CallFadeCoroutine(SceneManager.GetActiveScene().buildIndex);
       pausePanel.SetActive(false);
     }
 }
